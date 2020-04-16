@@ -1,0 +1,47 @@
+<h1>Listing Remains</h1>
+<div id="clamp">
+  <div class="aw1">
+    <h4>1</h4>
+  </div>
+  <div class="aw2">
+    <h4>2</h4>
+  </div>
+  <div class="aw3">
+    <h4>3</h4>
+  </div>
+  <div class="aw4">
+    <h4>4</h4>
+  </div>
+  <div id="filt"><h3>Filter</h3></div>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Idnumber</th>
+      <th>Name</th>
+      <th>Registration Date</th>
+      <th>Contact</th>
+      
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for remain <- @remains do %>
+    <tr>
+      <td><%= remain.idNumber %></td>
+      <td><%= remain.lastname %> <%= remain.middlename %> <%= remain.firstname %></td>
+      <td><%= 29 %>/<%= 04 %>/<%= 2019 %></td>
+      <td><%= 090876589098 %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.remain_path(@conn, :show, remain) %></span>
+        <span><%= link "Edit", to: Routes.remain_path(@conn, :edit, remain) %></span>
+        <span><%= link "Delete", to: Routes.remain_path(@conn, :delete, remain), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Remain", to: Routes.remain_path(@conn, :new) %></span>

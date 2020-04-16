@@ -1,0 +1,128 @@
+#pix{
+    float: left;
+    width: 40%;
+    margin: 5px;
+}
+#dan{
+    float: right;
+    width: 50%;
+    margin: 5px;
+}
+#dan1{
+    float: left;
+    width: 200px;
+    margin: 3px;
+    font-size: larger;
+}
+#dan2{
+    float: left;
+    margin: 5px;
+}
+#peg1 {
+    width: 95px;
+    margin: 0.2em;
+}
+#peg2 {
+    width: 95px;
+    margin: 0.2em;
+}
+.child{
+    width: 50%;
+    float: left;
+}
+.run{
+    width: 50%;
+    float: right;
+    height: 500px;
+}
+#peg{
+    float: left;
+    width: 30%;
+}
+#peg0{
+    float: left;
+    width: 50%;
+}
+#zac{
+    width: 345px;
+}
+#name{
+    width: 100%;
+}
+#damp{
+    float: left;
+    height: 15px;
+    width: 15px;
+}
+#spa{
+    border: 2px solid rgb(34, 9, 9);
+    width: 80px;
+    margin: 5px;
+    float: left;
+    padding-left: 10px;
+}
+#spa1{
+    border: 2px solid rgb(214, 212, 212);
+    width: 80px;
+    margin: 5px;
+    float: left;
+    padding-left: 10px;
+}
+.new{
+    clear: both;
+}
+#klap{
+    clear: both;
+    font-size: smaller;
+    height: 200px;
+    padding-top: 8px;
+    display: block;
+}
+#klap1{
+    clear: both;
+    height: 200px;
+    padding-top: 8px;
+    display: none;
+}
+#done{
+    clear: both;
+}
+#sax{
+    margin: 50px 0;
+}
+#pii{
+    padding-top: 3px;
+    height: 20px;
+}
+#clamp{
+    margin-left: 250px;
+}
+.aw1, .aw2, .aw3, .aw4{
+    width: 30px;
+    height:30px;
+    float: left;
+    border: 1.5px solid gray;
+    margin: 0.5em;
+    text-align: center;
+    border-radius:0.5em;
+}
+.aw1{
+    background-color: brown;
+}
+#filt{
+    float: right;
+    border: 2px solid brown;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+}
+th{
+    background-color: rgba(159, 159, 159, 0.16);
+    text-align: center;
+    padding: 10px;
+}
+td{
+    background-color: rgba(255, 255, 255, 0.16);
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,81 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+  <div class="child">
+    <div id="pog">
+      <%= label f, :idNumber %>
+      <div id="peg1">
+        <%= text_input f, :idNumber %>
+      </div>
+      <%= error_tag f, :idNumber %>
+    </div>
+    
+    <div id="name">
+      <div id="peg">
+        <%= label f, :lastname %>
+        <div id="peg1">
+          <%= text_input f, :lastname  %>
+        </div>
+        <%= error_tag f, :lastname %>
+      </div>
+
+      <div id="peg">
+        <%= label f, :middlename %>
+        <div id="peg1">
+          <%= text_input f, :middlename %>
+        </div>
+        <%= error_tag f, :middlename %>
+      </div>
+
+      <div id="peg">
+        <%= label f, :firstname %>
+        <div id="peg1">
+          <%= text_input f, :firstname %>
+        </div>
+        <%= error_tag f, :firstname %>
+      </div>
+    </div>
+
+    <div id="name">
+      <div id="peg0">
+        <%= label f, :Date_of_Birth %>
+        <div id="peg2">
+          <%= date_input f, :Date_of_Birth %>
+        </div>
+        <%= error_tag f, :Date_of_Birth  %>
+      </div>
+
+      <div id="peg0">
+        <%= label f, :Date_of_Death %>
+        <div id="peg2">
+          <%= date_input f, :Date_of_Death %>
+        </div>
+        <%= error_tag f, :Date_of_Death  %>
+      </div>
+    </div>
+
+      <div>
+        <%= label f, :Address %>
+        <div id="zac">
+          <%= text_input f, :Address %>
+        </div>
+        <%= error_tag f, :Address %>
+      </div>
+    </div>
+  </div>
+
+  <div class="run">
+    <%= label f, :Bio %>
+    <div>
+      <%= textarea f, :Bio %>
+    </div>
+    <%= error_tag f, :Bio %>
+  </div>
+
+  <div>
+    <%= submit "Save" %>
+  </div>
+<% end %>

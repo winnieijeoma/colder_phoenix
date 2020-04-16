@@ -1,0 +1,5 @@
+<h1>New Remain</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.remain_path(@conn, :create)) %>
+
+<span><%= link "Back", to: Routes.remain_path(@conn, :index) %></span>

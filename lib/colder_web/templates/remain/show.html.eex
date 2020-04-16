@@ -1,0 +1,66 @@
+<h1>Show Remain</h1>
+
+<ul>
+
+  <div id="part">
+    <div class="my-8" id="sax">
+      <img src="https://cdn.zeplin.io/5d72379c061b64a1351eca07/assets/D5BAEEAC-5A4B-4E31-80AB-1E8CB0EC22B8.svg" alt="arrow" class="float-left h-5 w-4" id="pii">
+        <span class="float-left"> Home</span><br />
+    </div>
+    <div>
+          <strong>
+            <%= @remain.idNumber %>
+          </strong>
+      </div>
+    <div id="pix"> 
+              
+      <img src="https://cdn.zeplin.io/5d72379c061b64a1351eca07/assets/26571CB5-51A3-45A0-9C05-EB7033C7790A.png" alt="whitney" id="eno" />
+    </div>
+  </div>
+
+  <div id="dan">
+    <div id="dan1" class="float: left">
+      <strong>
+        <%= @remain.lastname %> <%= @remain.middlename %> <%= @remain.firstname %><br />
+      </strong>
+      <%= 1963 %> - <%= 2017 %>
+    </div>
+    <div id="dan2">
+      <img src="https://cdn.zeplin.io/5d72379c061b64a1351eca07/assets/0579298B-DBF1-4D37-A5F9-8894C8D6FBDB.png" alt="speaker" id="damp">
+    </div>
+
+    <div class="new">
+      <div id="spa" onclick="myfunction()">
+        <span >Eulogy</span>
+      </div> 
+
+      <div id="spa1" onclick="myfunction1()">
+        <span>Location</span>
+      </div> 
+    </div> 
+
+    <div id="klap">
+        Whitney Elizabeth Houston was an
+        American singer and actress.  She was cited as the most awarded female 
+        artist of all time by Guinness World Records and remains one of the 
+        best-selling music artists of all time with 200 million records sold worldwide. 
+        Houston released seven studio albums and two soundtrack albums, all of 
+        which have been certified diamond, multi-platinum, platinum, or gold by the 
+        Recording Industry Association of America. Her crossover appeal on 
+        the popular music charts as well as her prominence on MTV, starting with her video 
+        for How Will I Know influenced several female African-American artists.
+  
+    </div>
+
+    <div id="klap1" >
+        <img src="https://cdn.zeplin.io/5d72379c061b64a1351eca07/assets/D741B051-9468-41A7-9F08-6CFB1376F676.png" alt="location" id="call1">
+    </div>
+
+  </div>
+
+</ul>
+
+<div id="done">
+  <span><%= link "Edit", to: Routes.remain_path(@conn, :edit, @remain) %></span>
+  <span><%= link "Back", to: Routes.remain_path(@conn, :index) %></span>
+</div>
